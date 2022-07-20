@@ -4,6 +4,8 @@ Contact me
 - Phone : 0891652553
 - Email : supakorncpw@gmail.com
 
+I'm fluent in English. Good at writing programs in python. Can make roblox games. Beginner blender modeler.
+
 You can use the [editor on GitHub](https://github.com/SupakornPholsiri/SupakornPholsiri.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
