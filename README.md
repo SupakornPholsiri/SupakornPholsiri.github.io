@@ -2,7 +2,7 @@
 
 Contact me 
 - Phone : 0891652553
-- Email : [supakorncpw@gmail.com](supakorncpw@gmail.com)
+- Email : supakorncpw@gmail.com
 
 You can use the [editor on GitHub](https://github.com/SupakornPholsiri/SupakornPholsiri.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
