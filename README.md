@@ -10,8 +10,8 @@ I'm majoring in computer engineering at King Mongkut's University of Technology
 - Good at reading English and writing in English.
 - Good at writing programs in python.
 - Have some experience making mobile app using Flutter
-- Can make roblox games.
-- Beginner blender modeler.
+- Can make Roblox games.
+- Beginner Blender modeler.
 
 You can use the [editor on GitHub](https://github.com/SupakornPholsiri/SupakornPholsiri.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
