@@ -6,8 +6,8 @@
   <sup>Born in 2003.</sup></p>
 
 ### Contact me 
-- Phone : 0891652553
-- Email : supakorncpw@gmail.com
+- :phone: : 0891652553
+- :email: : supakorncpw@gmail.com
 
 ### What can I do
 - Good at reading English and writing in English.
