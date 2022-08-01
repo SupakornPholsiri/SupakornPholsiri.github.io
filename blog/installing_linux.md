@@ -25,7 +25,7 @@ Setup your profile.
 
 You can leave this section as it is and continue.
 
-![Advanced setting in Ubuntu](/assets/images/AdvancedSettingUbuntu.png)
+![Advanced setting in Ubuntu](/assets/images/AdvancedSetuptingUbuntu.png)
 
 Restart Ubuntu as instructed.
 
