@@ -6,3 +6,7 @@ In this blog I will write about the installation of 3 of linux operating systems
 In order to use WSL2. I have to start by downloading Windows Subsystem for Linux Preview from Microsoft store.
 
 ![Windows Subsystem for Linux Preview](/assets/images/WSLPreview.png)
+
+After that I downloaded Ubuntu 22.04 LTS from Microsoft store.
+
+![Ubuntu 22.04 LTS](/assets/images/Ubuntu.png)
