@@ -17,4 +17,4 @@
 - Beginner Blender modeler.
 
 ### Online Blogs
-[Installing Linux](/blog/installing_linux.md)
+[Installing Linux](https://supakornpholsiri.github.io/blog/installing_linux.html)
