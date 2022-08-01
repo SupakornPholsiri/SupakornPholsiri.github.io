@@ -17,15 +17,16 @@ Then open the downloaded Ubuntu.
 
 Then select you language.
 
-
+![Language Selecting in Ubuntu](/assets/images/LangSelectUbuntu.png)
 
 Setup your profile.
 
-
+![Setting up Profile in Ubuntu](/assets/images/SetupProfileUbuntu.png)
 
 You can leave this section as it is and continue.
 
-
+![Advanced setting in Ubuntu](/assets/images/AdvancedSettingUbuntu.png)
 
 Restart Ubuntu as instructed.
 
+![Ubuntu setup completed](/assets/images/SetupCompleteUbuntu.png)
