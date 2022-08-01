@@ -13,4 +13,4 @@ After that download Ubuntu 22.04 LTS from Microsoft store.
 
 Then open the downloaded Ubuntu.
 
-
+![Installing Ubuntu](/assets/images/Installing_Ubuntu.png)
