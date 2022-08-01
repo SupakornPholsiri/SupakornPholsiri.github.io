@@ -15,3 +15,6 @@
 - Have some experience making mobile app using Flutter
 - Can make Roblox games.
 - Beginner Blender modeler.
+
+### Online Blogs
+[Installing Linux](/blog/installing_linux.md)
