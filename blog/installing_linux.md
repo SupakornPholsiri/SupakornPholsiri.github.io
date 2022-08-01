@@ -1,4 +1,4 @@
-[<< Main Page](http.supkornpholsiri.github.io)
+[<< Main Page](https://supakornpholsiri.github.io/)
 In this blog I will write about the installation of 3 of linux operating systems : Ubuntu, Debian & MX Linux, via WSL2 and VMware workstation player.
 
 ### Installing with WSL2. ###
