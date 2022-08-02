@@ -270,6 +270,26 @@ Now your Debian is ready to be used.
 
 ![Debian](/assets/images/Debian.png)
 
+But you need to add your user to sudo group first in order to use any sudo command in Debian.
+
+![Not in sudo group](/assets/images/NotInSudoers.png)
+
+- Switch to root user and runs a login shell.
+```shell
+$ su -
+```
+- Add your USER_NAME(your username) to sudo group.
+```shell
+usermod -aG sudo USER_NAME
+```
+- Exit the root shell.
+```shell
+exit
+```
+You should be able to use sudo commands after rebooting Debian.
+
+![In sudo group](/assets/images/InSudoers.png)
+
 ### Installing MX Linux on VMware Workstation 16 Player Virtual Machine.
 
 Start by downloading MX-21.1 iso image from [https://mxlinux.org/download-links/](https://mxlinux.org/download-links/).
