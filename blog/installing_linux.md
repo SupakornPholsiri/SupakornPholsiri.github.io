@@ -63,8 +63,8 @@ After open WSL2 or Ubuntu again all the settings are applied and Ubuntu is ready
 ![Testing Ubuntu 2](/assets/images/TestUbuntu2.png)
 ![Testing Ubuntu 3](/assets/images/TestUbuntu3.png)
 
-### Installing Linux on VMware Workstation 16 Player Virtual Machine.
+# Installing Linux on VMware Workstation 16 Player Virtual Machine.
 
-## Installing VMware Workstation 16 Player.
+### Installing VMware Workstation 16 Player.
 
 Start by Downloading VMware Workstation 16 Player from https://www.vmware.com/products/workstation-player.html.
