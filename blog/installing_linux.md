@@ -4,7 +4,8 @@
 
 In this blog I will write about the installation of 3 of linux operating systems : Ubuntu, Debian & MX Linux, via WSL2 and VMware Workstation 16 Player.
 
-[Installing Ubuntu 22.04 LTS with WSL2](#installing-ubuntu-2204-lts-with-wsl2)
+- [Installing Ubuntu 22.04 LTS with WSL2.](#installing-ubuntu-2204-lts-with-wsl2)
+- [Installing Linux on VMware Workstation 16 Player Virtual Machine.](#installing-linux-on-vmware-workstation-16-player-virtual-machine)
 
 ## Installing Ubuntu 22.04 LTS with WSL2.
 In order to use WSL2. We have to start by downloading Windows Subsystem for Linux Preview from Microsoft store.
