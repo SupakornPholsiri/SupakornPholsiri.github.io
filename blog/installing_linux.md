@@ -41,15 +41,15 @@ After that you will be greeted with a terminal.
 
 Try updating and upgrading all software in the repository by :
 
+Check for any upgradable softwares.
 ```shell
 $ sudo apt update -y
 ```
-Check for any upgradable softwares.
 
+Upgrade all upgradable softwares.
 ```shell
 $ sudo apt upgrade -y
 ```
-Upgrade all upgradable softwares.
 
 Then terminate Ubuntu so the settings can be applied.
 ```shell
