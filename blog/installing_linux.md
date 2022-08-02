@@ -68,6 +68,10 @@ After open WSL2 or Ubuntu again all the settings are applied and Ubuntu is ready
 
 ## Installing Linux on VMware Workstation 16 Player Virtual Machine.
 
+-[Installing VMware Workstation 16 Player.](#installing-vmware-workstation-16-player)
+-[Installing Debian 11.4 on VMware Workstation 16 Player Virtual Machine.](#installing-debian-114-on-vmware-workstation-16-player-virtual-machine)
+-[Installing MX Linux on VMware Workstation 16 Player Virtual Machine.](#installing-mx-linux-on-vmware-workstation-16-player-virtual-machine)
+
 ### Installing VMware Workstation 16 Player.
 
 Start by Downloading VMware Workstation 16 Player from [https://www.vmware.com/products/workstation-player.html](https://www.vmware.com/products/workstation-player.html).
