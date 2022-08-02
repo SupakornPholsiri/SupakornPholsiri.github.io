@@ -227,3 +227,38 @@ If you want the installer to scan additional DVD installation media to install s
 
 ![Scan extra installation media](/assets/images/ScanMediaDebian.png)
 
+Select a Debian archive mirror country that is close to your network for faster download time.
+
+![Debian archive mirror country](/assets/images/DebianArchiveMirrorCountry.png)
+
+Select a Debian archive mirror. Usually, deb.debian.org is a good choice.
+
+![Debian archive mirror](/assets/images/DebianArchiveMirror.png)
+
+If you use need to use a HTTP proxy to access the outside world, enter the proxy information. Otherwise leave this field blank.
+
+![Proxy information](/assets/images/ProxyInfoDebian.png)
+
+Choose if you want to participate in the package usage survey.
+
+![Package usage survey](/assets/images/PackageUsageSurveyDebian.png)
+
+Choose additional softwares that you want to install. You can leave it as the installer suggested.
+
+![Additional software](/assets/images/AdditionalSoftwareDebian.png)
+
+Install the GRUB bootloader on the primary virtual drive.
+
+![Grub bootloader](/assets/images/GRUBDebian.png)
+
+Select the primary virtual drive.
+
+![Select the primary virtual drive](/assets/images/VirtualDriveDebian.png)
+
+Finish the installation.
+
+![Finish the installation of Debian.](/assets/images/FinishDebian.png)
+
+Now your Debian is ready to be used.
+
+![Debian](/assets/images/Debian.png)
