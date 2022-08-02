@@ -122,14 +122,14 @@ Now VMware Workstation 16 Player is ready to be used.
 
 ### Installing Debian 11.4 on VMware Workstation 16 Player Virtual Machine.
 
-Start by downloading Debian 11.4 iso image from https://www.debian.org/distrib
+Start by downloading Debian 11.4 iso image from [https://www.debian.org/distrib](https://www.debian.org/distrib)
 
 ![Debian's Website](/assets/images/DebianWebsite.png)
 
 This blog will only cover how to install Debian via the Internet using Small CDs or USB sticks option.\
-https://www.debian.org/distrib/netinst \
+[https://www.debian.org/distrib/netinst](https://www.debian.org/distrib/netinst) \
 For x64 download amd64.\
-For x32 download i386.\
+For x32 download i386.
 
 ![Installing Debian via the Internet](/assets/images/DebianNetlist.png)
 
