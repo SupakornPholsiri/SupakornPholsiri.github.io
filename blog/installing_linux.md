@@ -300,3 +300,51 @@ Click Customize Hardware.
 Adjust the virtual machine's memory to your liking.
 
 ![Adjusting memory](/assets/images/MemoryMX.png)
+
+Connect to your iso file and finish the creation.
+
+![CD/DVD (SATA) setting](/assets/images/SATAMX.png)
+
+Open the virtual machine. Select MX-21.1 x64 (April 9, 2022) or the version of MX that you downloaded.
+
+![MX Linux BIOS](/assets/images/BIOSMX.png)
+
+You will be greeted with a desktop right before the installation. Select or open Install MX Linux.
+
+![Install MX Linux](/assets/images/InstallMX.png)
+
+Change your keyboard setting to your liking then click next.
+
+![Term of Service and Keyboard setting](/assets/images/KeyboardSettingMX.png)
+
+For inexperienced users, select Regular install using the entire disk.
+
+![Select type of installation](/assets/images/InstallTypeMX.png)
+
+Click yes to format the virtual disk.
+
+![Format confirmation](/assets/images/FormatDiskMX.png)
+
+Install GRUB for Linux and Windows on MBR and use your virtual disk as system boot disk. You can press next now, The installer will need your inputs to finish installing.
+
+![Install GRUB](/assets/images/GRUBMX.png)
+
+You can leave computer network names as they are and click next.
+
+![Computer network names](/assets/images/ComNetworkNamesMX.png)
+
+Select your locales and timezone. You can make the system clock use your timezone time and choose clock format.
+
+![Locale and time](/assets/images/LocaleAndTimeMX.png)
+
+Set your user account's and the root account's names and passwords. Your account username can't have spaces.
+
+![Accounts](/assets/images/AccountsMX.png)
+
+Finish the installation.
+
+![Finish with MX](/assets/images/FinishMX.png)
+
+After rebooting the virtual machine, The MX Linux is ready to be used.
+
+![MX](/assets/images/MX.png)
