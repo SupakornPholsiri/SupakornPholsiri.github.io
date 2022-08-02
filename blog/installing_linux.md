@@ -127,7 +127,7 @@ Start by downloading Debian 11.4 iso image from https://www.debian.org/distrib
 ![Debian's Website](/assets/images/DebianWebsite.png)
 
 This blog will only cover how to install Debian via the Internet using Small CDs or USB sticks option.\
-https://www.debian.org/distrib/netinst\
+https://www.debian.org/distrib/netinst \
 For x64 download amd64.\
 For x32 download i386.\
 
