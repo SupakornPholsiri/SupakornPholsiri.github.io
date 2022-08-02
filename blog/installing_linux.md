@@ -37,6 +37,8 @@ The installation is complete!
 
 After that you will be greeted with a terminal.
 
+![Ubuntu Terminal](/assets/images/TerminalUbuntu.png)
+
 Try updating and upgrading all software in the repository by :
 
 ```shell
@@ -51,3 +53,4 @@ Upgrade all upgradable softwares.
 
 Then restart Ubuntu so the settings can be applied.
 
+![Terminating Ubuntu]()
