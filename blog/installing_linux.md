@@ -68,4 +68,5 @@ After open WSL2 or Ubuntu again all the settings are applied and Ubuntu is ready
 ### Installing VMware Workstation 16 Player.
 
 Start by Downloading VMware Workstation 16 Player from https://www.vmware.com/products/workstation-player.html.
+
 ![Download page](/assets/images/VMwareDownload.png)
