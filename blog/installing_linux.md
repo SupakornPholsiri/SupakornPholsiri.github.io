@@ -39,7 +39,7 @@ After that you will be greeted with a terminal.
 
 ![Ubuntu Terminal](/assets/images/TerminalUbuntu.png)
 
-Try updating and upgrading all software in the repository by :
+Try updating and upgrading all software by :
 
 - Check for any upgradable softwares.
 ```shell
@@ -56,3 +56,9 @@ Then terminate Ubuntu so the settings can be applied.
 wsl -t Ubuntu-22.04
 ```
 ![Terminating Ubuntu](/assets/images/TerminatingRunningWSL.png)
+
+After open WSL2 or Ubuntu again all the settings are applied and Ubuntu is ready to be used.
+
+![Screenshot 2022-07-30 125423]()
+![Screenshot 2022-07-30 125548]()
+![Screenshot 2022-07-30 125942]()
