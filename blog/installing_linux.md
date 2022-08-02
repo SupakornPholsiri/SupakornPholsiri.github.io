@@ -35,14 +35,14 @@ The installation is complete!
 
 After that you will be greeted with a terminal.
 
-Try updating and upgrading all software in the repository with :
+Try updating and upgrading all software in the repository by :
 
-```
+```shebang
 $ sudo apt update -y
 ```
 Check for any upgradable softwares.
 
-```
+```shebang
 $ sudo apt upgrade -y
 ```
 Upgrade all upgradable softwares.
