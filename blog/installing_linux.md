@@ -119,3 +119,45 @@ Open VMware Workstation 16 Player. You can use VMware Workstation 16 Player for 
 Now VMware Workstation 16 Player is ready to be used.
 
 ![VMware](/assets/images/VMware.png)
+
+### Installing Debian 11.4 on VMware Workstation 16 Player Virtual Machine.
+
+Start by downloading Debian 11.4 iso image from https://www.debian.org/distrib
+
+![Debian's Website](/assets/images/DebianWebsite.png)
+
+This blog will only cover how to install Debian via the Internet. https://www.debian.org/distrib/netinst
+
+![Installing Debian via the Internet](/assets/images/DebianNetlist.png)
+
+Open VMware Workstation 16 Player. Create a new virtual machine.
+
+![VMware](/assets/images/VMware.png)
+
+Install the guest OS with the downloaded iso file.
+
+![Installing guest OS](/assets/images/Installiso.png)
+
+Name your virtual machine and select its location.
+
+![Name VM and set its location](/assets/images/NameAndLoc.png)
+
+Specify disk capacity for your virtual machine. Choose split virtual disk into multiple files for easier time moving the virtual machine to another computer.
+
+![Specify virtual disk size](/assets/images/VirtualDisk.png)
+
+Click Customize Hardware.
+
+![Ready to create](/assets/images/Ready.png)
+
+Adjust the virtual machine's memory to your liking.
+
+![Adjusting memory](/assets/images/Memory.png)
+
+Open the virtual machine. Choose Graphical install.
+
+![Debian BIOS](/assets/images/DebianBIOS.png)
+
+Select a language.
+
+![Select a language](/assets/images/LangSelectDebian.png)
