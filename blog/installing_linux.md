@@ -265,3 +265,38 @@ Finish the installation.
 Now your Debian is ready to be used.
 
 ![Debian](/assets/images/Debian.png)
+
+### Installing MX Linux on VMware Workstation 16 Player Virtual Machine.
+
+Start by downloading MX-21.1 iso image from [https://mxlinux.org/download-links/](https://mxlinux.org/download-links/).
+
+![MX Linux website](/assets/images/MXWebsite.png)
+
+Open VMware Workstation 16 Player. Create a new virtual machine.
+
+![VMware](/assets/images/VMware.png)
+
+VMware Workstation 16 Player doesn't know what OS this iso file is, so we will install the OS later.
+
+![Installing guest OS](/assets/images/InstallisoMX.png)  \
+![Creating a blank machine](/assets/images/BlankMachine.png)
+
+Let the virtual machine use Ubuntu or any Linux for now.
+
+![Placeholder OS](/assets/images/PlaceholderOS.png)
+
+Name your virtual machine and select its location.
+
+![Name VM and set its location](/assets/images/NameAndLocMX.png)
+
+Specify disk capacity for your virtual machine. Choose split virtual disk into multiple files for easier time moving the virtual machine to another computer.
+
+![Specify virtual disk size](/assets/images/VirtualDisk.png)
+
+Click Customize Hardware.
+
+![Ready to create](/assets/images/ReadyMX.png)
+
+Adjust the virtual machine's memory to your liking.
+
+![Adjusting memory](/assets/images/MemoryMX.png)
