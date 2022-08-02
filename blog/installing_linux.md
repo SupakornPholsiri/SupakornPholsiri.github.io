@@ -290,6 +290,12 @@ You should be able to use sudo commands after rebooting Debian.
 
 ![In sudo group](/assets/images/InSudoers.png)
 
+Some more testing.
+
+![Testing Debian](/assets/images/TestDebian.png) \
+![Testing Debian](/assets/images/TestDebian2.png) \
+![Testing Debian](/assets/images/TestDebian3.png)
+
 ### Installing MX Linux on VMware Workstation 16 Player Virtual Machine.
 
 Start by downloading MX-21.1 iso image from [https://mxlinux.org/download-links/](https://mxlinux.org/download-links/).
@@ -372,3 +378,55 @@ Finish the installation.
 After rebooting the virtual machine, The MX Linux is ready to be used.
 
 ![MX](/assets/images/MX.png)
+
+Or it might not be ready to use.
+
+![Unable to update](/assets/images/FailedToUpdate.png)
+
+We can use MX Updater to upgrade our softwares.
+
+Run MX Updater.
+
+![MX Updater](/assets/images/MXUpdater.png) 
+
+Click View and Upgrade.
+
+![MX Updater](/assets/images/MXUpdater2.png) 
+
+Click Upgrade.
+
+![MX Updater](/assets/images/MXUpdater3.png)
+
+Enter your password.
+
+![MX Updater](/assets/images/MXUpdater4.png)
+
+After MX Updater done upgrading software. Run sudo apt update again. It will say that it couldn't connect to the MX repository.
+
+![Can't connect to MX repository](/assets/images/FailedToUpdate2.png)
+
+So, let's use MX Repo Manager to change our MX repository.
+
+![MX Repo Manager](/assets/images/MXRepoManager.png)
+
+Enter your password.
+
+![MX Repo Manager](/assets/images/MXRepoManager2.png)
+
+Select a MX repository that's close to you or the Utah or Milan mirrors.
+
+![MX Repo Manager](/assets/images/MXRepoManager3.png)
+
+Now sudo apt update and sudo apt upgrade should be working properly.
+
+![Updated](/assets/images/UpdateMX.png) \
+![Upgraded](/assets/images/UpgradeMX.png)
+
+Some more testing.
+
+![Testing MX Linux](/assets/images/TestMX.png) \
+![Testing MX Linux](/assets/images/TestMX2.png)
+
+MX Linux uses a lot more space than Debian did. I'm glad there was still availble disk spaces.
+
+![MX disk spaces](/assets/images/DiskSpacesMX.png)
