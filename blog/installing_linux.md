@@ -29,6 +29,15 @@ You can leave this section as it is and continue.
 
 ![Advanced setting in Ubuntu](/assets/images/AdvancedSetupUbuntu.png)
 
-Restart Ubuntu as instructed.
+The installation is complete!
 
 ![Ubuntu setup completed](/assets/images/SetupCompleteUbuntu.png)
+
+After that you will be greeted with a terminal.
+
+Try updating and upgrading everything with
+
+```
+$ sudo apt update -y
+$ sudo apt upgrade -y
+```
