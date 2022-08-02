@@ -114,7 +114,7 @@ Restart your computer to let VMware Workstation 16 Player finish setting up its 
 Open VMware Workstation 16 Player. You can use VMware Workstation 16 Player for free for non-commercial use.
 
 ![Version Select](/assets/images/VersionSelect.png)
- ![Finally done with setting up VMware](/assets/images/FinishVMware.png)
+![Finally done with setting up VMware](/assets/images/FinishVMware.png)
 
 Now VMware Workstation 16 Player is ready to be used.
 
