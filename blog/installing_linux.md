@@ -67,7 +67,7 @@ After open WSL2 or Ubuntu again all the settings are applied and Ubuntu is ready
 
 ### Installing VMware Workstation 16 Player.
 
-Start by Downloading VMware Workstation 16 Player from https://www.vmware.com/products/workstation-player.html.
+Start by Downloading VMware Workstation 16 Player from [https://www.vmware.com/products/workstation-player.html](https://www.vmware.com/products/workstation-player.html).
 
 ![Download page](/assets/images/VMwareDownload.png)
 
@@ -113,7 +113,7 @@ Restart your computer to let VMware Workstation 16 Player finish setting up its 
 
 Open VMware Workstation 16 Player. You can use VMware Workstation 16 Player for free for non-commercial use.
 
-![Version Select](/assets/images/VersionSelect.png)
+![Version Select](/assets/images/VersionSelect.png) \
 ![Finally done with setting up VMware](/assets/images/FinishVMware.png)
 
 Now VMware Workstation 16 Player is ready to be used.
@@ -164,3 +164,66 @@ Open the virtual machine. Choose Graphical install.
 Select a language.
 
 ![Select a language](/assets/images/LangSelectDebian.png)
+
+Select your location.
+
+![Select your location](/assets/images/LocSelectDebian1.png) \
+![Select your location](/assets/images/LocSelectDebian2.png) \
+![Select your location](/assets/images/LocSelectDebian3.png)
+
+If there is no locale defined for the language and location you selected you will have to choose your locale.
+
+![Select your locale](/assets/images/LocaleSelectDebian.png)
+
+Configure you keymap.
+
+![Select your keymap](/assets/images/KeymapSelectDebian.png)
+
+Enter the hostname for the system.
+
+![Hostname](/assets/images/HostnameDebian.png)
+
+Enter your domain name. Home users can leave this blank.
+
+![Domain Name](/assets/images/DomainNameDebian.png)
+
+Set up password for root account.
+
+![Root's Password](/assets/images/RootPasswordDebian.png)
+
+Enter your full name.
+
+![User's full name](/assets/images/FullNameDebian.png)
+
+Enter your username for your account.
+
+![Username](/assets/images/UsernameDebian.png)
+
+Set up password for your account.
+
+![Your Password](/assets/images/YourPasswordDebian.png)
+
+For inexperienced users, choose Guided - use entire disk.
+
+![Partition Disk](/assets/images/PartitionDiskDebian.png)
+
+Select your virtual disk to be partitioned.
+
+![Partitioned Disk](/assets/images/PartitionedDiskDebian.png)
+
+For inexperienced users, choose All files in one partition.
+
+![Partitioning Scheme](/assets/images/PartitioningSchemeDebian.png)
+
+Finish Partitioning and write changes to disk.
+
+![Partition Summary](/assets/images/PartitionSummaryDebian.png)
+
+Click Yes.
+
+![Confirm Partitioning](/assets/images/PartitionConfirmDebian.png)
+
+If you want the installer to scan additional DVD installation media to install some additional packages on your system click Yes. Otherwise click No.
+
+![Scan extra installation media](/assets/images/ScanMediaDebian.png)
+
