@@ -70,3 +70,35 @@ After open WSL2 or Ubuntu again all the settings are applied and Ubuntu is ready
 Start by Downloading VMware Workstation 16 Player from https://www.vmware.com/products/workstation-player.html.
 
 ![Download page](/assets/images/VMwareDownload.png)
+
+After opening the installer, when this window pop up, restart your computer to let Windows finish the neccessary updates.
+
+![Restart prompt](/assets/images/RestartPrompt.png)
+
+Open the installer again.
+
+![VMwareInstaller](/assets/images/VMwareInstaller.png)
+
+Accept the terms in License Agreement.
+
+![VMware License Agreement](/assets/images/VMwareLicenseAgreement.png)
+
+Tick Install Windows Hypervisor Platform (WHP) automatically.
+
+![Install WHP](/assets/images/InstallWHP.png)
+
+Tick both options.
+
+![Custom Setup](/assets/images/CustomSetup.png)
+
+Tick both options.
+
+![User Experience Settings](/assets/images/UserExperienceSettings.png)
+
+Tick where you want VMware Workstation 16 Player's shortcut to be in.
+
+![VMware Shortcut](/assets/images/VMwareShortcut.png)
+
+Begin the installation.
+
+![Install VMware](/assets/images/InstallVMware.png)
