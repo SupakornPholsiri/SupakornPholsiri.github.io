@@ -53,4 +53,4 @@ Upgrade all upgradable softwares.
 
 Then restart Ubuntu so the settings can be applied.
 
-![Terminating Ubuntu]()
+![Terminating Ubuntu](/assets/images/TerminatingRunnWSL.png)
