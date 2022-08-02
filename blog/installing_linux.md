@@ -35,9 +35,15 @@ The installation is complete!
 
 After that you will be greeted with a terminal.
 
-Try updating and upgrading everything with
+Try updating and upgrading all software in the repository with :
 
 ```
 $ sudo apt update -y
+```
+Check for any upgradable softwares.
+
+```
 $ sudo apt upgrade -y
 ```
+Upgrade all upgradable softwares.
+
