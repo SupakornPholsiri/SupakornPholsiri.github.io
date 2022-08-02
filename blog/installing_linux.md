@@ -52,5 +52,7 @@ $ sudo apt upgrade -y
 Upgrade all upgradable softwares.
 
 Then restart Ubuntu so the settings can be applied.
-
+```shell
+wsl -t Ubuntu-22.04
+```
 ![Terminating Ubuntu](/assets/images/TerminatingRunningWSL.png)
