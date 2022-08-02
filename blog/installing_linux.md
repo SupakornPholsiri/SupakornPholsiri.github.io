@@ -47,3 +47,5 @@ $ sudo apt upgrade -y
 ```
 Upgrade all upgradable softwares.
 
+Then restart Ubuntu so the setting can be applied.
+
