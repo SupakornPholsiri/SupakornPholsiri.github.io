@@ -102,3 +102,11 @@ Tick where you want VMware Workstation 16 Player's shortcut to be in.
 Begin the installation.
 
 ![Install VMware](/assets/images/InstallVMware.png)
+
+Click Finish.
+
+![Finish Installing](/assets/images/FinishSetup.png)
+
+Restart your computer to let VMware Workstation 16 Player finish setting up its configuration.
+
+![Restart Prompt](/assets/images/RestartPrompt2.png)
