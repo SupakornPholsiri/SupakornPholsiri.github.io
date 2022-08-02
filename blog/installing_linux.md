@@ -9,6 +9,8 @@ In order to use WSL2. We have to start by downloading Windows Subsystem for Linu
 
 ![Windows Subsystem for Linux Preview](/assets/images/WSLPreview.png)
 
+You can open Windows Subsystem for Linux Preview now but it won't be useful until we install a distribution.
+
 After that download Ubuntu 22.04 LTS from Microsoft store.
 
 ![Ubuntu 22.04 LTS](/assets/images/Ubuntu.png)
@@ -47,5 +49,5 @@ $ sudo apt upgrade -y
 ```
 Upgrade all upgradable softwares.
 
-Then restart Ubuntu so the setting can be applied.
+Then restart Ubuntu so the settings can be applied.
 
