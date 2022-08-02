@@ -13,7 +13,7 @@ After that download Ubuntu 22.04 LTS from Microsoft store.
 
 ![Ubuntu 22.04 LTS](/assets/images/Ubuntu.png)
 
-Then open the downloaded Ubuntu.
+Then open the downloaded Ubuntu. This will start the installation of Ubuntu 22.04 LTS asssuming you already downloaded Windows Subsystem for Linux Preview.
 
 ![Installing Ubuntu](/assets/images/Installing_Ubuntu.png)
 
