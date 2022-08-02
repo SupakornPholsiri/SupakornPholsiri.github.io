@@ -59,6 +59,6 @@ wsl -t Ubuntu-22.04
 
 After open WSL2 or Ubuntu again all the settings are applied and Ubuntu is ready to be used.
 
-![Testing Ubuntu 1](/asset/images/TestUbuntu1.png)
-![Testing Ubuntu 2](/asset/images/TestUbuntu2.png)
-![Testing Ubuntu 3](/asset/images/TestUbuntu3.png)
+![Testing Ubuntu 1](/assets/images/TestUbuntu1.png)
+![Testing Ubuntu 2](/assets/images/TestUbuntu2.png)
+![Testing Ubuntu 3](/assets/images/TestUbuntu3.png)
