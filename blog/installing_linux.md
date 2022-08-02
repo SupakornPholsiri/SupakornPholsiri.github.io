@@ -51,7 +51,7 @@ $ sudo apt upgrade -y
 ```
 Upgrade all upgradable softwares.
 
-Then restart Ubuntu so the settings can be applied.
+Then terminate Ubuntu so the settings can be applied.
 ```shell
 wsl -t Ubuntu-22.04
 ```
