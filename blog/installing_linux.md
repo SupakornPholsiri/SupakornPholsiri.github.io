@@ -93,7 +93,7 @@ Tick both options.
 
 Tick both options.
 
-![User Experience Settings](/assets/images/VMwareUserExperienceSettings.png)
+![User Experience Settings](/assets/images/VMwareUserExperienceSetting.png)
 
 Tick where you want VMware Workstation 16 Player's shortcut to be in.
 
