@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Installing Linux
+description: Installing linux on Windows 11.
 ---
 
 [<< Main Page](https://supakornpholsiri.github.io/)
