@@ -1,3 +1,8 @@
+---
+layout: default
+title: Installing Linux
+---
+
 [<< Main Page](https://supakornpholsiri.github.io/)
 
 # Installing Linux
