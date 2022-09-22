@@ -120,6 +120,62 @@ Step 1. Initially, all LEDs are OFF. \
 Step 2. Turn on the first 4 LEDs using PWM signals, each with different duty cycles (e.g. 100%, 50%, 25%, 10%), and the rest of the LEDs are OFF. \
 Step 3. Move the positions of ON LEDs to the left by one position in a circular manner and repeat Step 3.
 
+```C
+const int LED_PINS[] = {32,33,25,26,27,14,12,13};
+const int NUM_LEDS   = sizeof(LED_PINS)/sizeof(int);
+```
+Define pin numbers that we are going to use and calculate the amount of pins that we are going to use.
+
+```C
+#define OFF (LOW)
+#define ON (HIGH)
+```
+Since we are using active HIGH LEDs. We define HIGH as ON and define LOW as OFF.
+
+```C
+const int PWM_RESOLUTION = 8;
+const int PWM_FREQ = 1000;
+const int DUTY_MAX = (1 << PWM_RESOLUTION);
+```
+Placeholder text.
+
+```C
+void setup() {
+  for (int i=0; i < NUM_LEDS; i++) {
+    ledcSetup( i /*channel*/, PWM_FREQ, PWM_RESOLUTION );
+    ledcAttachPin( LED_PINS[i] /*pin*/, i /*channel*/ );
+  }
+}
+```
+Placeholder text
+
+```C
+void loop() {
+  static uint16_t value_1=0;
+  static uint16_t value_2=1;
+  static uint16_t value_3=2;
+  static uint16_t value_4=3;
+  // put your main code here, to run repeatedly:
+  for ( int i=0; i < NUM_LEDS; i++ ) {
+    if (i == value_1){
+      ledcWrite(i, (DUTY_MAX-1)*10/100);
+    }else if (i == value_2) {
+      ledcWrite(i, (DUTY_MAX-1)*25/100);
+    }else if (i == value_3) {
+      ledcWrite(i, (DUTY_MAX-1)*50/100);
+    }else if (i == value_4) {
+      ledcWrite(i, DUTY_MAX-1);
+    }else {ledcWrite(i, 0);}
+  }
+  value_1 = (value_1+1) % NUM_LEDS;
+  value_2 = (value_2+1) % NUM_LEDS;
+  value_3 = (value_3+1) % NUM_LEDS;
+  value_4 = (value_4+1) % NUM_LEDS;
+  delay(500);
+}
+```
+Placeholder text
+
 ## Program #5
 
 ## Program #6
