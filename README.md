@@ -18,3 +18,4 @@
 
 ### Online Blogs
 - [Installing Linux](https://supakornpholsiri.github.io/blog/installing_linux.html)
+- [Writing Arduino programs in Wokwi](https://supakornpholsiri.github.io/blog/)
