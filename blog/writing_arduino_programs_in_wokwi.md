@@ -38,6 +38,7 @@ void setup() {
   }
 }
 ```
+Set direction of LED pins according to initial condition.
 
 ```C
 void loop() {
@@ -53,6 +54,8 @@ void loop() {
   delay(500); 
 }
 ```
+Turn the next LED on and turn all other LED off. Wait 500 ms. Then repeat.
+
 
 ## Program #2
 LED changing pattern: B \
