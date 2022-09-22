@@ -13,12 +13,43 @@ In this blog, I will write about writing basic Arduino programs in Wokwi Web-bas
 LED changing pattern: A \
 Step 1. Initially, only one LED (at index=0) is ON, and the rest of the LEDs are OFF. \
 Step 2. The position of the ON LED should be moved to the next in a circular manner in a fixed time interval and then repeat Step 2.
+
 ```C
 #if defined(ESP32)
 const int LED_PINS[] = {23,22,32,33,25,26,27,14,12,13};
 #else
 const int LED_PINS[] = {2,3,4,5,6,7,8,9,10,11};
 #endif
+```
+
+```C
+const int NUM_LEDS = sizeof(LED_PINS)/sizeof(int);
+```
+
+```C
+void setup() {
+  for ( int i=0; i < NUM_LEDS; i++ ) {
+    // set the direction of the i-th LED pin
+    pinMode( LED_PINS[i], OUTPUT ); 
+    // turn on the first LED (i=0) and the rest off. 
+    digitalWrite( LED_PINS[i], (i==0) ? HIGH : LOW );
+  }
+}
+```
+
+```C
+void loop() {
+  // set a static value to keep track of which LED to turn on
+  static uint16_t value=0;
+  // reset the static value after it reaches 10
+  if (value == 10) {value = 0;}
+  for ( int i=0; i < NUM_LEDS; i++ ) {
+    if (i == value) {digitalWrite(LED_PINS[i], HIGH);}
+    else {digitalWrite(LED_PINS[i], LOW);}
+  }
+  value++;
+  delay(500); 
+}
 ```
 
 ## Program #2
