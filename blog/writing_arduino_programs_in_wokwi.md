@@ -14,7 +14,6 @@ LED changing pattern: A \
 Step 1. Initially, only one LED (at index=0) is ON, and the rest of the LEDs are OFF. \
 Step 2. The position of the ON LED should be moved to the next in a circular manner in a fixed time interval and then repeat Step 2.
 
-Let's start by defining the pin numbers that we are going to use.
 ```C
 #if defined(ESP32)
 const int LED_PINS[] = {23,22,32,33,25,26,27,14,12,13};
@@ -22,12 +21,12 @@ const int LED_PINS[] = {23,22,32,33,25,26,27,14,12,13};
 const int LED_PINS[] = {2,3,4,5,6,7,8,9,10,11};
 #endif
 ```
-This piece of code defines pin numbers according to whether you are using ESP32 board or not. If you're using ESP32 board then the first list will be used. otherwise the second list will be used. \
+Define pin numbers according to whether you are using ESP32 board or not. If you're using ESP32 board then the first list will be used. otherwise the second list will be used.
 
 ```C
 const int NUM_LEDS = sizeof(LED_PINS)/sizeof(int);
 ```
-This piece of code calculates the amount of pins we are going to use by dividing the size of pin numbers list in bytes by the size of an integer in bytes. \
+Calculate the amount of pins we are going to use by dividing the size of pin numbers list in bytes by the size of an integer in bytes.
 
 ```C
 void setup() {
@@ -38,7 +37,7 @@ void setup() {
     digitalWrite( LED_PINS[i], (i==0) ? HIGH : LOW );
   }
 }
-``` \
+```
 
 ```C
 void loop() {
