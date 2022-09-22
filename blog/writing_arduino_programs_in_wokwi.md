@@ -40,7 +40,7 @@ void setup() {
   }
 }
 ```
-Set direction of LED pins according to initial condition.
+Set direction of LED pins according to the initial conditions.
 
 ```C
 void loop() {
@@ -64,6 +64,48 @@ LED changing pattern: B \
 Step 1. Initially, all LEDs are OFF. \
 Step 2. Turn on the LEDs one by one with a time delay, starting at index=0 until all LEDs are ON. \
 Step 3. If all LEDs are ON, turn off LEDs one by one starting at index=n-1,  where n is the total number of LEDs, until all LEDs are OFF, and repeat Steps 2-3.
+
+```C
+#if defined(ESP32)
+const int LED_PINS[] = {23,22,32,33,25,26,27,14,12,13};
+#else
+const int LED_PINS[] = {2,3,4,5,6,7,8,9,10,11};
+#endif
+```
+Define pin numbers according to whether you are using ESP32 board or not. If you're using ESP32 board then the first list will be used. otherwise the second list will be used.
+
+```C
+const int NUM_LEDS = sizeof(LED_PINS)/sizeof(int);
+```
+Calculate the amount of pins we are going to use by dividing the size of pin numbers list in bytes by the size of an integer in bytes.
+
+```C
+void setup() {
+  for ( int i=0; i < NUM_LEDS; i++ ) {
+    // set the direction of the i-th LED pin
+    pinMode( LED_PINS[i], OUTPUT ); 
+    // turn on the first LED (i=0) and the rest off. 
+    digitalWrite( LED_PINS[i], (i==0) ? HIGH : LOW );
+  }
+}
+```
+Set direction of LED pins according to the initial conditions.
+
+```C
+void loop() {
+  // Turn on the LEDs one by one with a time delay, starting from index 0.
+  for ( int i=0; i < NUM_LEDS; i++ ) {
+    digitalWrite(LED_PINS[i], HIGH);
+    delay(500);
+  }
+  // Turn off the LEDs one by one with a time delay, starting from the last index.
+  for ( int i=NUM_LEDS-1; i >= 0; i-- ) {
+    digitalWrite(LED_PINS[i], LOW);
+    delay(500);
+  }
+}
+```
+Turn on the LEDs one by one with a time delay, starting from index 0. After all the LEDs are on, Turn off the LEDs ono by one with a time delay, starting form the last index. Then repeat the process.
 
 ## Program #3
 LED changing pattern: C \
