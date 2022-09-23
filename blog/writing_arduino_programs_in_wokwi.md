@@ -272,15 +272,47 @@ void loop(){
    if (value == 10) {value = 0;}
    // turn the LED corresponding to the static value on. Turn all other LEDs off.
    for (int i = 0; i < NUM_LEDS; i++){
-      // create a PIN class object
+      // create a PIN class object with OUT direction and set its value according to which LEDs should be turned on.
       Pin pin(LED_PINS[i], Pin::Direction::OUT, (i == value) ? HIGH : LOW);
    }
    value++;
    delay(500);
 }
 ```
-Turn on the LEDs one by one with a time delay, starting from index 0. After all the LEDs are on, Turn off the LEDs ono by one with a time delay, starting form the last index. Then repeat the process.
+Turn the first LED on and turn all other LED off. Wait 500 ms. Then turn the next LED on and turn all other LEDs off. Repeat this step for all LED. Once the last LED has been turned on, Do the entire main function again starting form the first LED.
 
-[See the full code here](https://wokwi.com/projects/343504328318779988)
+[See the full code in action here](https://wokwi.com/projects/343504328318779988)
 
 ## Program #6
+
+```C
+#include "Pin.h"
+```
+Include the Pin.h Header file.
+
+```C
+const int LED_PINS[] = {23,22,32,33,25,26,27,14,12,13};
+const int NUM_LEDS = sizeof(LED_PINS) / sizeof(int);
+```
+Define pin numbers that we are going to use and calculate the amount of pins that we are going to use.
+
+```C
+void setup(){
+   
+}
+```
+Since we are not setting anythin up before the main function, we can leave setup blank.
+
+```C
+void loop(){
+   // 
+   for (int i = 0; i < NUM_LEDS; i++){
+      Pin pin(LED_PINS[i], Pin::Direction::OUT, HIGH);
+      delay(500);
+   }
+   for (int i = NUM_LEDS-1; i >= 0; i--){
+      Pin pin(LED_PINS[i], Pin::Direction::OUT, LOW);
+      delay(500);
+   }
+}
+```
