@@ -211,25 +211,30 @@ const int PWM_RESOLUTION = 8;
 const int PWM_FREQ = 1000;
 const int DUTY_MAX = (1 << PWM_RESOLUTION);
 ```
-Placeholder text.
+PWM_RESOLUTION is the resolution of LEDC channel. /
+PWM_FREQ is the frequency of pwm of the analog signals sent by analog pins. /
+DUTY_MAX is the maximum duty cycle possible for the selected resolution.
 
 ```C
 void setup() {
   for (int i=0; i < NUM_LEDS; i++) {
+    // config LEDC channel i to have PWN_ RESOLUTION of PWM_RESOLUTION and a pwm of PWM_FREQ frequency. 
     ledcSetup( i /*channel*/, PWM_FREQ, PWM_RESOLUTION );
+    // connect pin to the corresponding LEDC channel.
     ledcAttachPin( LED_PINS[i] /*pin*/, i /*channel*/ );
   }
 }
 ```
-Placeholder text
+Configure LEDC channels and connect analog pins to the corresponding LEDC channel.
 
 ```C
 void loop() {
+  // create static values to track which LEDs should be driven with .
   static uint16_t value_1=0;
   static uint16_t value_2=1;
   static uint16_t value_3=2;
   static uint16_t value_4=3;
-  // put your main code here, to run repeatedly:
+  // Drive the corresponding  
   for ( int i=0; i < NUM_LEDS; i++ ) {
     if (i == value_1){
       ledcWrite(i, (DUTY_MAX-1)*10/100);
@@ -241,6 +246,7 @@ void loop() {
       ledcWrite(i, DUTY_MAX-1);
     }else {ledcWrite(i, 0);}
   }
+  // increase the value of static values and reset their values once they reached 10
   value_1 = (value_1+1) % NUM_LEDS;
   value_2 = (value_2+1) % NUM_LEDS;
   value_3 = (value_3+1) % NUM_LEDS;
