@@ -58,6 +58,8 @@ void loop() {
 ```
 Turn the next LED on and turn all other LED off. Wait 500 ms. Then repeat.
 
+[See the full code in action here.](https://wokwi.com/projects/342304317736223315)
+
 
 ## Program #2
 LED changing pattern: B \
@@ -106,6 +108,8 @@ void loop() {
 }
 ```
 Turn on the LEDs one by one with a time delay, starting from index 0. After all the LEDs are on, Turn off the LEDs one by one with a time delay, starting form the last index. Then repeat the process.
+
+[See the full code in action here.](https://wokwi.com/projects/342332696220926548)
 
 ## Program #3
 LED changing pattern: C \
@@ -182,6 +186,8 @@ void loop() {
 ```
 Run the turn_on function and the turn_off function. Then repeat.
 
+[See the full code in action here](https://wokwi.com/projects/342309910868918866)
+
 ## Program #4
 LED changing pattern: D \
 Step 1. Initially, all LEDs are OFF. \
@@ -244,6 +250,8 @@ void loop() {
 ```
 Placeholder text
 
+[See the full code in action here](https://wokwi.com/projects/342336021774467667)
+
 ## Program #5
 
 ```C
@@ -301,7 +309,7 @@ void setup(){
    
 }
 ```
-Since we are not setting anythin up before the main function, we can leave setup blank.
+Since we are not setting anything up before the main function, we can leave setup() blank.
 
 ```C
 void loop(){
@@ -318,3 +326,5 @@ void loop(){
 }
 ```
 Turn on the LEDs one by one with a time delay, starting from index 0. After all the LEDs are on, Turn off the LEDs one by one with a time delay, starting form the last index. Then repeat the process.
+
+[See the full code in action here.](https://wokwi.com/projects/343510163551945298)
