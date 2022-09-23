@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Writing Arduino programs in Wokwi
-description: Writing basic Arduino C/C++ Programs in Wokwi Web-based Smmimulator.
+description: Writing basic Arduino C/C++ Programs in Wokwi Web-based Simulator.
 ---
 
 [<< Main Page](https://supakornpholsiri.github.io/)
@@ -105,7 +105,7 @@ void loop() {
   }
 }
 ```
-Turn on the LEDs one by one with a time delay, starting from index 0. After all the LEDs are on, Turn off the LEDs ono by one with a time delay, starting form the last index. Then repeat the process.
+Turn on the LEDs one by one with a time delay, starting from index 0. After all the LEDs are on, Turn off the LEDs one by one with a time delay, starting form the last index. Then repeat the process.
 
 ## Program #3
 LED changing pattern: C \
@@ -305,14 +305,16 @@ Since we are not setting anythin up before the main function, we can leave setup
 
 ```C
 void loop(){
-   // 
+   // Setting the LED pins outputs' to HIGH one by one.
    for (int i = 0; i < NUM_LEDS; i++){
       Pin pin(LED_PINS[i], Pin::Direction::OUT, HIGH);
       delay(500);
    }
+   // Setting the LED pins outputs' to LOW one by one.
    for (int i = NUM_LEDS-1; i >= 0; i--){
       Pin pin(LED_PINS[i], Pin::Direction::OUT, LOW);
       delay(500);
    }
 }
 ```
+Turn on the LEDs one by one with a time delay, starting from index 0. After all the LEDs are on, Turn off the LEDs one by one with a time delay, starting form the last index. Then repeat the process.
