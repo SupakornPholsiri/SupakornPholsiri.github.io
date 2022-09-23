@@ -114,6 +114,74 @@ Step 2. Turn on the first LED by increasing the duty cycle of the PWM signal dri
 Step 3. Repeat Step 2 with the next LED until all LEDs are fully ON. \
 Step 4. If all LEDs are ON, turn off LEDs one-by-one by decreasing the duty cycles of the PWM signals until all LEDs are OFF and repeat Steps 2-4.
 
+```C
+const int LED_PINS[] = {5,18,19,21};
+const int NUM_LEDS   = sizeof(LED_PINS)/sizeof(int);
+```
+Define pin numbers that we are going to use and calculate the amount of pins that we are going to use.
+
+```C
+#define OFF (LOW)
+#define ON (HIGH)
+```
+Since we are using active HIGH LEDs. We define HIGH as ON and define LOW as OFF.
+
+```C
+void setup() {
+  
+}
+```
+Since we are not setting anything up before the main code, we are going to leave the void setup() blank.
+
+```C
+const int PWM_RESOLUTION = 8;
+const int PWM_FREQ = 1000;
+const int DUTY_MAX = (1 << PWM_RESOLUTION);
+```
+Placeholder text
+
+```C
+void turn_on() {
+  for ( int i=0; i < NUM_LEDS; i++ ) {
+      ledcSetup( i /*channel*/, PWM_FREQ, PWM_RESOLUTION );
+      ledcAttachPin( LED_PINS[i] /*pin*/, i /*channel*/ );
+      for ( int x=0; x < DUTY_MAX; x++ ) { 
+         ledcWrite( i, x );
+         delay(5);
+      }
+      ledcDetachPin( LED_PINS[i] ); 
+      digitalWrite( LED_PINS[i], ON );
+      delay(200);
+  }
+}
+```
+Placeholder text
+
+```C
+void turn_off() {
+  for ( int i=0; i < NUM_LEDS; i++ ) {
+      ledcSetup( i /*channel*/, PWM_FREQ, PWM_RESOLUTION );
+      ledcAttachPin( LED_PINS[i] /*pin*/, i /*channel*/ );
+      for ( int x=0; x < DUTY_MAX; x++ ) { 
+         ledcWrite( i, DUTY_MAX-1-x );
+         delay(5);
+      }
+      ledcDetachPin( LED_PINS[i] ); 
+      digitalWrite( LED_PINS[i], OFF );
+      delay(200);
+  }
+}
+```
+Placeholder text
+
+```C
+void loop() {
+  turn_on();
+  turn_off();
+}
+```
+Run the turn_on function and the turn_off function. Then repeat.
+
 ## Program #4
 LED changing pattern: D \
 Step 1. Initially, all LEDs are OFF. \
@@ -177,5 +245,40 @@ void loop() {
 Placeholder text
 
 ## Program #5
+
+```C
+#include "Pin.h"
+```
+Include the Pin.h Header file.
+
+```C
+const int LED_PINS[] = {23,22,32,33,25,26,27,14,12,13};
+const int NUM_LEDS = sizeof(LED_PINS) / sizeof(int);
+```
+Define pin numbers that we are going to use and calculate the amount of pins that we are going to use.
+
+```C
+void setup(){
+   
+}
+```
+Since we are not setting anything up before the main function, we can leave the setup() blank.
+
+```C
+void loop(){
+   // set a static value to keep track of which LED to turn on
+   static int value=0;
+   // reset the value after it reaches 10.
+   if (value == 10) {value = 0;}
+   // turn the LED corresponding to the static value on. Turn all other LEDs off.
+   for (int i = 0; i < NUM_LEDS; i++){
+      // create a PIN class object
+      Pin pin(LED_PINS[i], Pin::Direction::OUT, (i == value) ? HIGH : LOW);
+   }
+   value++;
+   delay(500);
+}
+```
+Turn on the LEDs one by one with a time delay, starting from index 0. After all the LEDs are on, Turn off the LEDs ono by one with a time delay, starting form the last index. Then repeat the process.
 
 ## Program #6
