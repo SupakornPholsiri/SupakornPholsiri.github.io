@@ -258,6 +258,64 @@ Placeholder text
 
 [See the full code in action here](https://wokwi.com/projects/342336021774467667)
 
+## Creating Header files and Cpp files for easier OOP programming
+  Sometime, We want to use OOP for reusability, modularity, readability, etc. One way we can do this is to create classes in the main sketch, but it's not ideal for programs with high code length. The other way to do OOP programming in arduino is to separate the classes into different files. This method make it easier to add new functionality or fix bugs in longer code.
+  For the next two programs we are going to create an OOP version of Program #1 and Program #2 using Pin class to control pins
+### Pin.h (The header file)
+This is the class declaration for when your programs use the Pin class
+```CPP
+#ifndef PIN_H
+#define PIN_H
+
+#include <Arduino.h>
+
+// This is a C++ class for an Arduino digital pin
+class Pin {
+   public:
+     enum class Direction { OUT=0, IN=1, IN_PULLUP=2 };
+     
+     // a class constructor with parameters
+     Pin( int8_t pin, Direction dir=Direction::IN, bool init_value=false );
+     
+     // read the input pin
+     bool read( bool force_update=true ); 
+     
+     // write the output pin
+     void write( bool value, bool force_update=true );
+     
+     // toggle the output pin
+     void toggle( bool force_update=true ) ;
+     
+     // assign a new value to the output pin
+     void operator=(bool value);
+     
+     // set the direction of the pin
+     void setDirection( Direction dir, bool init_value=false );
+     
+     // inline methods
+     inline operator bool()           { return _value; }
+     inline int8_t getPin()           { return _pin;   }
+     inline bool   getValue()         { return _value; }
+     inline Direction getDirection()  { return _dir;   }
+     
+     // the class destructor
+     ~Pin() {} 
+
+   protected:
+     // initialize the GPIO pin
+     void init( int8_t pin, Direction dir, bool init_value );
+     // update the logic state of the GPIO pin 
+     void update();
+ 
+   private:
+     int8_t     _pin;   // the GPIO pin number
+     bool       _value; // the value of pin
+     Direction  _dir;   // the direction of pin
+};
+
+#endif
+```
+
 ## Program #5
 
 ```C
