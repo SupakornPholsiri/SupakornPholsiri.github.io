@@ -381,9 +381,6 @@ void Pin::update() {
     //Serial.printf( "Debug> read input: %d on pin %d\n", _value, _pin );
   }
 }
-
-///////////////////////////////////////////////////////////////////////////////////
-
 ```
 
 ## Program #5
