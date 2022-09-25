@@ -394,6 +394,9 @@ void Pin::update() {
 ```
 
 ## Program #5
+LED changing pattern: A \
+Step 1. Initially, only one LED (at index=0) is ON, and the rest of the LEDs are OFF. \
+Step 2. The position of the ON LED should be moved to the next in a circular manner in a fixed time interval and then repeat Step 2.
 
 ```C
 #include "Pin.h"
@@ -433,6 +436,10 @@ Turn the first LED on and turn all other LED off. Wait 500 ms. Then turn the nex
 [See the full code in action here](https://wokwi.com/projects/343504328318779988)
 
 ## Program #6
+LED changing pattern: B \
+Step 1. Initially, all LEDs are OFF. \
+Step 2. Turn on the LEDs one by one with a time delay, starting at index=0 until all LEDs are ON. \
+Step 3. If all LEDs are ON, turn off LEDs one by one starting at index=n-1,  where n is the total number of LEDs, until all LEDs are OFF, and repeat Steps 2-3.
 
 ```C
 #include "Pin.h"
