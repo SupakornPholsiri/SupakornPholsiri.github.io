@@ -260,6 +260,7 @@ Placeholder text
 
 ## Creating Header files and Cpp files for easier OOP programming
 Sometime, We want to use OOP for reusability, modularity, readability, etc. One way we can do this is to create classes in the main sketch, but it's not ideal for programs with high code length. The other way to do OOP programming in arduino is to separate the classes into different files. This method make it easier to add new functionality or fix bugs in longer code. \
+
 For the next two programs we are going to create an OOP version of Program #1 and Program #2 using Pin class to control pins
 ### Pin.h (The header file)
 This is the class declaration for when your programs use the Pin class
