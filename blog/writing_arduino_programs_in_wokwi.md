@@ -17,15 +17,19 @@ So, it is a good place to start your arduino project.
 
 ### Adding components
 Press the purple button with a plus sign to add a component to your circuit
+![Adding components](/assets/images/AddComponent.png)
 
 ### Configure components
 Go to diagram.json and change property of your components here. You can also add components here.
+![Configure components](/assets/images/Diagram.png)
 
-### Porgram you microcontroller
-Write your code in the left side of your screen
+### Program you microcontroller
+Write your code in the left side of your screen.
+![Program you microcontroller](/assets/images/Program.png)
 
 ### Starting simulation
 Press the green button to start the simulation
+![Starting simulation](/assets/images/Simulate.png)
 
 ## Program #1
 LED changing pattern: A \
