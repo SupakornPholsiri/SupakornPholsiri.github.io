@@ -10,8 +10,6 @@ description: Writing basic Arduino C/C++ Programs in Wokwi Web-based Simulator.
 In this blog, I will write about writing basic Arduino programs in Wokwi Web-based Simulator.
 
 ## Program #1
-![Circuit for program 1](/assets/images/PatternA.png)
-
 LED changing pattern: A \
 Step 1. Initially, only one LED (at index=0) is ON, and the rest of the LEDs are OFF. \
 Step 2. The position of the ON LED should be moved to the next in a circular manner in a fixed time interval and then repeat Step 2.
