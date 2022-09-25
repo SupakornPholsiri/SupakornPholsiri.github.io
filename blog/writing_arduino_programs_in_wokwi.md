@@ -242,7 +242,7 @@ void loop() {
   static uint16_t value_2=1;
   static uint16_t value_3=2;
   static uint16_t value_4=3;
-  // Drive the corresponding  
+  // Drive the corresponding LEDs pin with the corresponding duty cycle.
   for ( int i=0; i < NUM_LEDS; i++ ) {
     if (i == value_1){
       ledcWrite(i, (DUTY_MAX-1)*10/100);
@@ -262,7 +262,8 @@ void loop() {
   delay(500);
 }
 ```
-Placeholder text
+Turn on the first 4 LEDs using PWM signals, each with different duty cycles (e.g. 100%, 50%, 25%, 10%), and the rest of the LEDs are OFF.
+Move the positions of ON LEDs to the left by one position in a circular manner and repeat.
 
 [See the full code in action here](https://wokwi.com/projects/342336021774467667)
 
