@@ -9,7 +9,7 @@ description: Writing basic Arduino C/C++ Programs in Wokwi Web-based Simulator.
 # Writing Arduino programs in Wokwi
 In this blog, I will write about writing basic Arduino programs in [Wokwi Web-based Simulator](https://wokwi.com/).
 
-![Wokwi online simulator](Wokwi.png)
+![Wokwi online simulator](/assets/images/Wokwi.png)
 
 Wokwi is an free online Electronics simulator. You can use it to simulate Arduino, ESP32, and many other popular boards, parts and sensors. \
 When working with Wokwi there is no need to worry about not having not enough component or breaking the board and Wokwi also make it easy to share your project. \
