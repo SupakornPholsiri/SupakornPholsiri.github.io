@@ -263,7 +263,7 @@ Sometime, We want to use OOP for reusability, modularity, readability, etc. One 
 
 For the next two programs we are going to create an OOP version of Program #1 and Program #2 using Pin class to control pins
 ### Pin.h (The header file)
-This is the class declaration for when your programs use the Pin class
+This is the class declaration for when your programs use the Pin class. Including the arduino header file is neccessary because we are going to use basic arduino functions in out Pin class.
 ```CPP
 #ifndef PIN_H
 #define PIN_H
@@ -315,6 +315,75 @@ class Pin {
 };
 
 #endif
+```
+
+### Pin.cpp (The Cpp file)
+This is where you add functionality to your Pin class.
+```CPP
+#include "Pin.h"
+
+// Class implementation for Pin.h
+
+Pin::Pin( int8_t pin, Direction dir, bool init_value ) {
+  init( pin, dir, init_value );
+}
+
+bool Pin::read( bool force_update ) {
+  if (force_update) { update(); }
+  return _value;
+}
+
+void Pin::write( bool value, bool force_update ) {
+  _value = value;
+  if (force_update) { update(); }
+}
+
+void Pin::toggle( bool force_update ) {
+  if ( _dir == Direction::OUT ) {
+     _value = !_value;
+  }
+  if (force_update) {
+     update();
+  }
+}
+     
+void Pin::operator=(bool value) {
+  write( value );
+}   
+
+void Pin::setDirection( Direction dir, bool init_value ) {
+  init( _pin, dir, init_value );
+}
+
+void Pin::init( int8_t pin, Direction dir, bool init_value ) {
+  _pin   = pin;
+  _dir   = dir;
+  _value = init_value;
+  if ( _dir == Direction::OUT ) { 
+    pinMode( _pin, OUTPUT );
+  }
+  else if ( _dir == Direction::IN ) {
+    pinMode( _pin, INPUT );
+  }
+  else if ( _dir == Direction::IN_PULLUP ) {
+    pinMode( _pin, INPUT_PULLUP );
+  }
+  update();
+}
+
+void Pin::update() {
+  if ( _dir == Direction::OUT ) { 
+    digitalWrite( _pin, _value ? true : false ) ;
+    //Serial.printf( "Debug> write output: %d on pin %d\n", _value, _pin );
+  }
+  else {
+    _value = digitalRead( _pin ) ? true : false;
+    //Serial.printf( "Debug> read input: %d on pin %d\n", _value, _pin );
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////////
+
 ```
 
 ## Program #5
