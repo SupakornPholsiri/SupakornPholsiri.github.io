@@ -142,41 +142,51 @@ const int PWM_RESOLUTION = 8;
 const int PWM_FREQ = 1000;
 const int DUTY_MAX = (1 << PWM_RESOLUTION);
 ```
-Placeholder text
+PWM_RESOLUTION is the resolution of LEDC channel. /
+PWM_FREQ is the frequency of pwm of the analog signals sent by analog pins. /
+DUTY_MAX is the maximum duty cycle possible for the selected resolution.
 
 ```C
 void turn_on() {
   for ( int i=0; i < NUM_LEDS; i++ ) {
+      // config LEDC channel i to have PWN_ RESOLUTION of PWM_RESOLUTION and a pwm of PWM_FREQ frequency. 
       ledcSetup( i /*channel*/, PWM_FREQ, PWM_RESOLUTION );
+      // connect pin to the corresponding LEDC channel.
       ledcAttachPin( LED_PINS[i] /*pin*/, i /*channel*/ );
+      // reduce duty cycle by 1 every 5 ms until it reaches 0.
       for ( int x=0; x < DUTY_MAX; x++ ) { 
          ledcWrite( i, x );
          delay(5);
       }
+      // unconnect pin from the LEDC channel and turn the LED on.
       ledcDetachPin( LED_PINS[i] ); 
       digitalWrite( LED_PINS[i], ON );
       delay(200);
   }
 }
 ```
-Placeholder text
+This is the function used to turn on the first LED by increasing the duty cycle of the PWM signal driving the LED, until the LED is fully ON.
 
 ```C
 void turn_off() {
   for ( int i=0; i < NUM_LEDS; i++ ) {
+      // config LEDC channel i to have PWN_ RESOLUTION of PWM_RESOLUTION and a pwm of PWM_FREQ frequency. 
       ledcSetup( i /*channel*/, PWM_FREQ, PWM_RESOLUTION );
+      // connect pin to the corresponding LEDC channel.
       ledcAttachPin( LED_PINS[i] /*pin*/, i /*channel*/ );
+      // reduce duty cycle by 1 every 5 ms until it reaches 0.
       for ( int x=0; x < DUTY_MAX; x++ ) { 
          ledcWrite( i, DUTY_MAX-1-x );
          delay(5);
       }
+      // unconnect pin from the LEDC channel and turn the LED off.
       ledcDetachPin( LED_PINS[i] ); 
       digitalWrite( LED_PINS[i], OFF );
       delay(200);
   }
 }
 ```
-Placeholder text
+This is the function used to turn off LEDs one-by-one by decreasing the duty cycles of the PWM signals until all LEDs are OFF.
 
 ```C
 void loop() {
