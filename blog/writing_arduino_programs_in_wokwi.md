@@ -15,6 +15,18 @@ Wokwi is an free online Electronics simulator. You can use it to simulate Arduin
 When working with Wokwi there is no need to worry about not having not enough component or breaking the board and Wokwi also make it easy to share your project. \
 So, it is a good place to start your arduino project.
 
+### Adding components
+Press the purple button with a plus sign to add a component to your circuit
+
+### Configure components
+Go to diagram.json and change property of your components here. You can also add components here.
+
+### Porgram you microcontroller
+Write your code in the left side of your screen
+
+### Starting simulation
+Press the green button to start the simulation
+
 ## Program #1
 LED changing pattern: A \
 Step 1. Initially, only one LED (at index=0) is ON, and the rest of the LEDs are OFF. \
