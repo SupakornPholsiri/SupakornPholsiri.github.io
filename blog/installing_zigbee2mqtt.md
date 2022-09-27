@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Installing Linux
-description: Installing linux on Windows 11.
+title: Installing Zigbee2MQTT
+description: Installing Zigbee2MQTT on Linux.
 ---
 
 ```sh
