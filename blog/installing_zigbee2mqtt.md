@@ -1,3 +1,9 @@
+---
+layout: default
+title: Installing Linux
+description: Installing linux on Windows 11.
+---
+
 ```shell
 sudo curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 ```
