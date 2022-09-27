@@ -4,6 +4,9 @@ title: Installing Zigbee2MQTT
 description: Installing Zigbee2MQTT on Linux.
 ---
 
+# Installing Zigbee2MQTT on Linux
+In this blog we are going to cover the topic of 
+
 Set up Node.js repository.
 ```sh
 sudo curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
