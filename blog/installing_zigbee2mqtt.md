@@ -40,3 +40,5 @@ Install dependencies as your user.
 cd /opt/zigbee2mqtt
 npm ci
 ```
+
+![npm](/assets/images/npm.png)
