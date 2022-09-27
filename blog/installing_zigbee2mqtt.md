@@ -17,6 +17,9 @@ Verify that the correct nodejs and npm versions have been installed.
 node --version
 npm --version
 ```
+![Correct version example]()
+nodejs version should be v14.X, V16.x, V17.x or V18.X.
+npm version should be 6.X, 7.X or 8.X
 Create a directory for zigbee2mqtt and set your user as owner of it.
 ```sh
 sudo mkdir /opt/zigbee2mqtt
