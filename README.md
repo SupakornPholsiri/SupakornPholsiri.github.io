@@ -3,7 +3,8 @@
 <p>
   <strong>Supakorn Pholsiri</strong> (Nung)<br>
   Computer engineering student at King Mongkut’s University of Technology.<br>
-  <sup>Born in 2003.</sup></p>
+  <sup>Born in 2003.</sup>
+</p>
 
 ### Contact me 
 - :phone: 0891652553
