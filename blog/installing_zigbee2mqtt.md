@@ -4,24 +4,24 @@ title: Installing Linux
 description: Installing linux on Windows 11.
 ---
 
-```shell
+```sh
 sudo curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 ```
-```shell
+```sh
 sudo apt-get install -y nodejs git make g++ gcc
 ```
-```shell
+```sh
 node --version
 npm --version
 ```
-```shell
+```sh
 sudo mkdir /opt/zigbee2mqtt
 sudo chown -R ${USER}: /opt/zigbee2mqtt
 ```
-```shell
+```sh
 git clone --depth 1 https://github.com/Koenkk/zigbee2mqtt.git /opt/zigbee2mqtt
 ```
-```shell
+```sh
 cd /opt/zigbee2mqtt
 npm ci
 ```
