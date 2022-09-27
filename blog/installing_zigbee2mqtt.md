@@ -17,7 +17,7 @@ Verify that the correct nodejs and npm versions have been installed.
 node --version
 npm --version
 ```
-nodejs version should be v14.X, V16.x, V17.x or V18.X.
+nodejs version should be v14.X, V16.x, V17.x or V18.X. \
 npm version should be 6.X, 7.X or 8.X \
 ![Correct version example](/assets/images/CorrectVersionExample.png)
 
