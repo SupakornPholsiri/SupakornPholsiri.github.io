@@ -27,7 +27,6 @@ mkdir mosquitto/log
 nano mosquitto/config/mosquitto.conf
 ```
 This is an example of how a configuration file should look like.
-
 ```sh
 listener 1883
 allow_anonymous true
