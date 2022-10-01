@@ -41,7 +41,7 @@ log_dest stdout
 ## Installing and running your Mosquitto broker docker container.
 Pull the Mosquitto docker image
 ```sh
-sudo docker pull eclipse-mosquitto
+$ sudo docker pull eclipse-mosquitto
 ```
 Run the mosquitto broker
 ```sh
