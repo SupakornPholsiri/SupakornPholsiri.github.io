@@ -44,7 +44,7 @@ Pull the Mosquitto docker image
 sudo docker pull eclipse-mosquitto
 ```
 Run the mosquitto broker
-````sh
+```sh
 $ sudo docker run -it -p 1883:1883 -v [Path to your mosquitto configuration file]:/mosquitto/config/mosquitto.conf \
 -v [Path to your mosquitto data directory]:/mosquitto/data -v [Path to your mosquitto log directory]:/mosquitto/log \
 --name mosquitto eclipse-mosquitto
