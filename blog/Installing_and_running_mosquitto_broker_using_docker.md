@@ -14,17 +14,17 @@ Before you run your Mosquitto broker docker container, you need to make a config
 
 Create a directory that will contain information about your Mosquitto broker.
 ```sh
-mkdir mosquitto
+$ mkdir mosquitto
 ```
 Create subdirectories that will contain various informations about your Mosquitto broker in your directory.
 ```sh
-mkdir mosquitto/data
-mkdir mosquitto/config
-mkdir mosquitto/log
+$ mkdir mosquitto/data
+$ mkdir mosquitto/config
+$ mkdir mosquitto/log
 ```
 Create the configuration file.
 ```sh
-nano mosquitto/config/mosquitto.conf
+$ nano mosquitto/config/mosquitto.conf
 ```
 This is an example of how a configuration file should look like.
 ```sh
@@ -36,4 +36,16 @@ persistence_location /mosquitto/data
 
 log_dest file /mosquitto/log/mosquitto.log
 log_dest stdout
+```
+
+## Installing and running your Mosquitto broker docker container.
+Pull the Mosquitto docker image
+```sh
+sudo docker pull eclipse-mosquitto
+```
+Run the mosquitto broker
+````sh
+$ sudo docker run -it -p 1883:1883 -v [Path to your mosquitto configuration file]:/mosquitto/config/mosquitto.conf \
+-v [Path to your mosquitto data directory]:/mosquitto/data -v [Path to your mosquitto log directory]:/mosquitto/log \
+--name mosquitto eclipse-mosquitto
 ```
