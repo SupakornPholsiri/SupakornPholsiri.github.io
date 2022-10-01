@@ -1,5 +1,7 @@
 ---
 layout: default
-title: Installing Zigbee2MQTT
-description: Installing Zigbee2MQTT on Linux.
+title: Installing and Running Mosquitto broker using Docker.
+description: Installing and Running Mosquitto broker using Docker.
 ---
+
+
