@@ -49,7 +49,7 @@ $ sudo docker run -it -p 1883:1883 -v [Path to your mosquitto configuration file
 -v [Path to your mosquitto data directory]:/mosquitto/data -v [Path to your mosquitto log directory]:/mosquitto/log \
 --name mosquitto eclipse-mosquitto
 ```
-![](/assets/images/MosquittoDocker.png)
+![Mosquitto Running](/assets/images/MosquittoDocker.png)
 You can terminate the session by pressing Ctrl+c.
 
 The mosquitto docker container stays in your system and can be use again with the command below. Don't worry about not seeing any output beside the container's name this time, it's working.
