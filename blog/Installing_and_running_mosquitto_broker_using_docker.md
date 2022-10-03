@@ -82,7 +82,6 @@ We can check our IP address using
 ```sh
 $ ifconfig
 ```
-![Checking IP address](/assets/images/Finding_IP_address.png)
 
 After that connect your client via a GUI-based MQTT client or the mosquitto package. I will use a GUI-based MQTT client for the demonstration. 
 
