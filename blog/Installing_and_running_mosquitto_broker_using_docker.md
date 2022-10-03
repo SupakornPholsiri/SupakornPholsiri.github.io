@@ -39,12 +39,14 @@ log_dest stdout
 ```
 
 ## Installing and running your Mosquitto broker docker container.
+### Installing the docker container
 Pull the Mosquitto docker image
 ```sh
 $ sudo docker pull eclipse-mosquitto
 ```
 ![Pulling Mosquitto image](/assets/images/DockerPullMosquitto.png)
 
+### Running the docker container
 Run the mosquitto broker
 ```sh
 $ sudo docker run -it -p 1883:1883 -v [Path to your mosquitto configuration file]:/mosquitto/config/mosquitto.conf \
@@ -68,3 +70,18 @@ If you don't want to keep the docker container in your system you can use this c
 ```sh
 $ sudo docker rm mosquitto
 ```
+
+### Using the mosquitto broker docker container
+We have covered how to run the docker container, but how do you test if the broker is actually working? By connecting a client to your broker of course!
+
+Before we can connect our clients to the broker we have to know the IP of the computer that is hosting it first. \
+We can check our IP using 
+```sh
+$ ifconfig
+```
+![Checking IP address]()
+
+After that connect your client via a GUI-based MQTT client or the mosquitto package. I will use a GUI-based MQTT client for the demonstration.
+![MQTT Explorer]()
+
+If you're running the container in a VM, make sure to use bridged network connection. Otherwise, any client that is not the VM itself won't be able to connect to your broker.
