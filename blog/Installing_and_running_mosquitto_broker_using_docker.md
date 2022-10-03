@@ -91,4 +91,4 @@ The client connect successfully. The client can subscribe and publish to a topic
 ![Connected](/assets/images/ClientConnected.png)
 
 If you're running the container in a VM, make sure to use bridged network connection. Otherwise, any client that is not the VM itself won't be able to connect to your broker.
-![Bridged connection]()
+![Bridged connection](/assets/images/Bridged_Connection.png)
