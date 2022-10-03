@@ -60,13 +60,13 @@ The mosquitto docker container stays in your system and can be use again with th
 ```sh
 $ sudo docker start mosquitto
 ```
-![Starting Mosquitto]()
+![Starting Mosquitto](/assets/images/Starting_Mosquitto.png)
 
 This time, Terminate the session with
 ```sh
 $ sudo docker stop mosquitto
 ```
-![Stopping Mosquitto]()
+![Stopping Mosquitto](/assets/images/Stopping_Mosquitto.png)
 
 
 If you don't want to keep the docker container in your system you can use this command to remove the container.
@@ -93,6 +93,6 @@ The client connect successfully. The client can subscribe and publish to a topic
 
 ![Connected](/assets/images/ClientConnected.png)
 
-If you're running the container in a VM, make sure to use bridged network connection. Otherwise, any client that is not the VM itself won't be able to connect to your broker.
+If you're running the container in a VM, make sure to use bridged network connection. Otherwise, any client that is not in the VM itself won't be able to connect to your broker.
 
 ![Bridged connection](/assets/images/Bridged_Connection.png)
