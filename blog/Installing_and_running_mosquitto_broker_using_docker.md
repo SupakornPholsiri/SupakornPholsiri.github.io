@@ -60,11 +60,14 @@ The mosquitto docker container stays in your system and can be use again with th
 ```sh
 $ sudo docker start mosquitto
 ```
+![Starting Mosquitto]()
 
 This time, Terminate the session with
 ```sh
 $ sudo docker stop mosquitto
 ```
+![Stopping Mosquitto]()
+
 
 If you don't want to keep the docker container in your system you can use this command to remove the container.
 ```sh
@@ -74,16 +77,16 @@ $ sudo docker rm mosquitto
 ### Using the mosquitto broker docker container
 We have covered how to run the docker container, but how do you test if the broker is actually working? By connecting a client to your broker of course!
 
-Before we can connect our clients to the broker we have to know the IP of the computer that is hosting it first. \
-We can check our IP using 
+Before we can connect our clients to the broker we have to know the IP address of the computer that is hosting it first. \
+We can check our IP address using 
 ```sh
 $ ifconfig
 ```
-![Checking IP address]()
+![Checking IP address](/assets/images/Finding_IP_address.png)
 
 After that connect your client via a GUI-based MQTT client or the mosquitto package. I will use a GUI-based MQTT client for the demonstration. 
 
-Use the IP we found from ifconfig command as host \
+Use the IP address we found from ifconfig command as host \
 ![MQTT Explorer](/assets/images/MQTT_Explorer.png) \
 The client connect successfully. The client can subscribe and publish to a topic with no problems. \
 ![Connected](/assets/images/ClientConnected.png)
