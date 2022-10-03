@@ -43,7 +43,8 @@ Pull the Mosquitto docker image
 ```sh
 $ sudo docker pull eclipse-mosquitto
 ```
-![Pulling Mosquitto image](/assets/images/DockerPullMosquitto.png) \
+![Pulling Mosquitto image](/assets/images/DockerPullMosquitto.png)
+
 Run the mosquitto broker
 ```sh
 $ sudo docker run -it -p 1883:1883 -v [Path to your mosquitto configuration file]:/mosquitto/config/mosquitto.conf \
