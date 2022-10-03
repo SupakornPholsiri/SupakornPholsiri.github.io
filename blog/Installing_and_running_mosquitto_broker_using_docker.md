@@ -81,7 +81,12 @@ $ ifconfig
 ```
 ![Checking IP address]()
 
-After that connect your client via a GUI-based MQTT client or the mosquitto package. I will use a GUI-based MQTT client for the demonstration.
-![MQTT Explorer]()
+After that connect your client via a GUI-based MQTT client or the mosquitto package. I will use a GUI-based MQTT client for the demonstration. 
+
+Use the IP we found from ifconfig command as host \
+![MQTT Explorer](/assets/images/MQTT_Explorer.png) \
+The client connect successfully. The client can subscribe and publish to a topic with no problems. \
+![Connected](/assets/images/ClientConnected.png)
 
 If you're running the container in a VM, make sure to use bridged network connection. Otherwise, any client that is not the VM itself won't be able to connect to your broker.
+![Bridged connection]()
