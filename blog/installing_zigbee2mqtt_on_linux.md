@@ -36,6 +36,8 @@ Set up Node.js repository.
 $ sudo curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 ```
 
+![Setting up repository](/assets/images/installing_zigbee2mqtt_on_linux/Setting_up_repository.png)
+
 Install Node.js and required dependencies
 ```sh
 $ sudo apt-get install -y nodejs git make g++ gcc
