@@ -17,6 +17,16 @@ $ sudo dmesg
 
 The adapter was identified and mounted on **ttyUSB0** in my case.
 
+## Granting permission to serial port devices
+
+Add the current user to dialout group.
+
+```sh
+$ sudo usermod -a -G dialout $USER
+```
+
+Make sure to log out and log in again after to make the changes apply.
+
 ## Installation
 
 Set up Node.js repository.
