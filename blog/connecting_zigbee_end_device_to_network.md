@@ -43,9 +43,11 @@ frontend:
 
 Set **permit_true** to true when you want to connect new zigbee end devices to the zigbee network. Set it to false otherwise.
 
-## Pairing devices to the network
+## Connecting devices to the network
 
 Start Zigbee2MQTT
+
+![Zigbee2MQTT](/assets/images/installing_zigbee2mqtt_on_linux/Zigbee2MQTT_started.png)
 
 Connect the device to the network. For example, Xiaomi MiJia temperature and humidity sensor (WSDCGQ01LM) can be connect to the network by holding the button on the side of the device for around 5 seconds.
 
