@@ -4,7 +4,7 @@ title: Installing Zigbee2MQTT
 description: Installing Zigbee2MQTT on Linux.
 ---
 
-[<< Main page]()
+[<< Main page](https://supakornpholsiri.github.io/)
 
 # Installing Zigbee2MQTT on Linux
 
