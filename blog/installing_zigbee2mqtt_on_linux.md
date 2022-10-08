@@ -11,9 +11,11 @@ In this blog we are going to cover the topic of Installing Zigbee2MQTT on linux.
 ## Finding the Zigbee-Adapter
 
 After you plug the adapter use the command below to locate the adapter.
+
 ```sh
 $ sudo dmesg
 ```
+![dmesg output](/assets/images/installing_zigbee2mqtt_on_linux/dmesg_output.png)
 
 The adapter was identified and mounted on **ttyUSB0** in my case.
 
@@ -108,3 +110,6 @@ Go to **/opt/zigbee2MQTT** and start Zigbee2MQTT
 $ cd /opt/zigbee2MQTT
 $ npm start
 ```
+
+When started successfully, you will see something like:
+
