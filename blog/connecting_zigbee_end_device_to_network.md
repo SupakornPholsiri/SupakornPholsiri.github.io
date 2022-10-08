@@ -55,7 +55,7 @@ Connect the device to the network. For example, Xiaomi MiJia temperature and hum
 
 Once connected, the output will notify that a new device has been connected.
 
-![]()
+![Device connected](/assets/images/connecting_zigbee_end_device_to_network.md/Connected.png)
 
 After that you can recieve the infomation from the device in your output in JSON string format.
 
@@ -63,4 +63,4 @@ After that you can recieve the infomation from the device in your output in JSON
 
 You can also see the infomation about the connected devices in your Zigbee2MQTT frontend.
 
-![]()
+![Zigbee2MQTT frontend](/assets/images/connecting_zigbee_end_device_to_network.md/Zigbee2MQTT_frontend.png)
