@@ -51,7 +51,7 @@ Start Zigbee2MQTT
 
 Connect the device to the network. For example, Xiaomi MiJia temperature and humidity sensor (WSDCGQ01LM) can be connect to the network by holding the button on the side of the device for around 5 seconds.
 
-<img src = "./assets/images/connecting_zigbee_end_device_to_network.md/Zigbee_device.jpg" width = "50">
+<img src = "./assets/images/connecting_zigbee_end_device_to_network.md/Zigbee_device.jpg" width = "50"/>
 
 ![Xiaomi MiJia temperature and humidity sensor](/assets/images/connecting_zigbee_end_device_to_network.md/Zigbee_device.jpg) ![Device connected](/assets/images/connecting_zigbee_end_device_to_network.md/Device_connected.jpg)
 
