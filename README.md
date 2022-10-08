@@ -21,4 +21,4 @@
 - [Installing Linux](https://supakornpholsiri.github.io/blog/installing_linux.html)
 - [Writing Arduino programs in Wokwi](https://supakornpholsiri.github.io/blog/writing_arduino_programs_in_wokwi.html)
 - [Installing and running Mosquitto broker using docker](https://supakornpholsiri.github.io/blog/installing_and_running_mosquitto_broker_using_docker.html)
-- [Installing Zigbee2MQTT on Linux]((https://supakornpholsiri.github.io/blog/installing_zigbee2mqtt_on_linux.html)
+- [Installing Zigbee2MQTT on Linux](https://supakornpholsiri.github.io/blog/installing_zigbee2mqtt_on_linux.html)
