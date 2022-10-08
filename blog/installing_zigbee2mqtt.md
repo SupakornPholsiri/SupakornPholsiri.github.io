@@ -15,7 +15,7 @@ After you plug the adapter use the command below to locate the adapter.
 $ sudo dmesg
 ```
 
-The adapter was identified and mounted on *ttyUSB0* in my case.
+The adapter was identified and mounted on **ttyUSB0** in my case.
 
 ## Installation
 
@@ -92,7 +92,7 @@ frontend:
 ```
 # Running Zigbee2MQTT
 
-Go to */opt/zigbee2MQTT* and start Zigbee2MQTT
+Go to **/opt/zigbee2MQTT** and start Zigbee2MQTT
 
 ```sh
 $ cd /opt/zigbee2MQTT
