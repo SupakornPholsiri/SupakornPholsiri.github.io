@@ -43,6 +43,8 @@ Install Node.js and required dependencies
 $ sudo apt-get install -y nodejs git make g++ gcc
 ```
 
+![Installing required dependencies](/assets/images/installing_zigbee2mqtt_on_linux/Install_dependencies.png)
+
 Verify that the correct nodejs and npm versions have been installed.
 ```sh
 $ node --version
@@ -51,7 +53,7 @@ $ npm --version
 nodejs version should be v14.X, V16.x, V17.x or V18.X. \
 npm version should be 6.X, 7.X or 8.X
 
-![Correct version example](/assets/images/CorrectVersionExample.png)
+![Correct version example](/assets/images/installing_zigbee2mqtt_on_linux/Correct_version_example.png)
 
 Create a directory for zigbee2mqtt and set your user as owner of it.
 ```sh
@@ -63,6 +65,7 @@ Clone Zigbee2MQTT repository.
 ```sh
 $ git clone --depth 1 https://github.com/Koenkk/zigbee2mqtt.git /opt/zigbee2mqtt
 ```
+![Cloning Zigbee2MQTT repository](/assets/images/installing_zigbee2mqtt_on_linux/Cloning_Github_repo.png)
 
 Install dependencies as your user.
 ```sh
@@ -70,7 +73,8 @@ $ cd /opt/zigbee2mqtt
 $ npm ci
 ```
 
-![npm](/assets/images/npm.png)
+![npm](/assets/images/installing_zigbee2mqtt_on_linux/npm.png)
+![npm done](/assets/images/installing_zigbee2mqtt_on_linux/npm2.png)
 
 ## Configuration
 
@@ -115,3 +119,4 @@ $ npm start
 
 When started successfully, you will see something like:
 
+![Zigbee2MQTT started successfully](/assets/images/installing_zigbee2mqtt_on_linux/Zigbee2MQTT_started.png)
