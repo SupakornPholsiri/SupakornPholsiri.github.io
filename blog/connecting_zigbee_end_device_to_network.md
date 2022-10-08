@@ -51,10 +51,12 @@ Start Zigbee2MQTT
 
 Connect the device to the network. For example, Xiaomi MiJia temperature and humidity sensor (WSDCGQ01LM) can be connect to the network by holding the button on the side of the device for around 5 seconds.
 
-<img src = "https://raw.githubusercontent.com/SupakornPholsiri/SupakornPholsiri.github.io/main/assets/images/connecting_zigbee_end_device_to_network.md/Zigbee_device.jpg" width = "45%" height = "45%" align = "left"><img src = "https://raw.githubusercontent.com/SupakornPholsiri/SupakornPholsiri.github.io/main/assets/images/connecting_zigbee_end_device_to_network.md/Device_connected.jpg" width = "45%" height = "45%" align = "right">
+<p>
+    <img src = "https://raw.githubusercontent.com/SupakornPholsiri/SupakornPholsiri.github.io/main/assets/images/connecting_zigbee_end_device_to_network.md/Zigbee_device.jpg" width = "45%" height = "45%" align = "left"><img src = "https://raw.githubusercontent.com/SupakornPholsiri/SupakornPholsiri.github.io/main/assets/images/connecting_zigbee_end_device_to_network.md/Device_connected.jpg" width = "45%" height = "45%" align = "right">
+</p>
 
 <p>
-    Once connected, the output will notify that a new device has been connected.
+Once connected, the output will notify that a new device has been connected.
 </p>
 
 After that you can recieve the infomation from the device in your output in JSON string format.
