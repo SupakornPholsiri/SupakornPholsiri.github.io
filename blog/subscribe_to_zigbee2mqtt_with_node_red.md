@@ -21,3 +21,4 @@ The nodes that we will use to subscribe to the MQTT broker used by Zigbee2MQTT i
 
 
 Connect the MQTT in node's output to a Debug node to view the massage recieved from the MQTT broker.
+
