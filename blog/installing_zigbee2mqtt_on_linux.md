@@ -8,7 +8,7 @@ description: Installing Zigbee2MQTT on Linux.
 
 # Installing Zigbee2MQTT on Linux
 
-In this blog we are going to cover the topic of Installing Zigbee2MQTT on linux.
+In this blog we are going to cover the topic of Installing Zigbee2MQTT on linux. Make sure you have a MQTT broker ready to be used.
 
 ## Finding the Zigbee-Adapter
 
