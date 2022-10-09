@@ -24,3 +24,4 @@
 - [Installing Zigbee2MQTT on Linux](https://supakornpholsiri.github.io/blog/installing_zigbee2mqtt_on_linux.html)
 - [Connecting Zigbee end devices to Zigbee network](https://supakornpholsiri.github.io/blog/connecting_zigbee_end_device_to_network.html)
 - [Subscribing to Zigbee2MQTT with Node-RED](https://supakornpholsiri.github.io/blog/subscribe_to_zigbee2mqtt_with_node_red.html)
+- [Displaying data from Zigbee end devices on Node-RED dashboard](https://supakornpholsiri.github.io/blog/displaying_data_from_zigbee_end_devices_on_node_red_dashboard.html)
