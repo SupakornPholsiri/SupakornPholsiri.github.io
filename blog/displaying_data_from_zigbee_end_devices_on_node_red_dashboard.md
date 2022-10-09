@@ -87,10 +87,26 @@ The **function2** node extracts the illuminance_lux's value from the JSON reciev
 
 ![Gauge node's properties](/assets/images/displaying_data_from_zigbee_end_devices_on_node_red_dashboard/gauge_property.png)
 
+We have to create a group for the gauge. Do this by selecting the Add new dashboard group option, then press the pencil button.
+
 ![Dashboard group node](/assets/images/displaying_data_from_zigbee_end_devices_on_node_red_dashboard/dashboard_group.png)
+
+We also have to create a tab for the group. Do this be selecting the Add new dashboard tab option, then press the pencil button.
 
 ![Dashboard tab node](/assets/images/displaying_data_from_zigbee_end_devices_on_node_red_dashboard/dashboard_tab.png)
 
 ### Setting up notification node's properties
 
 ![Notification node's properties](/assets/images/displaying_data_from_zigbee_end_devices_on_node_red_dashboard/notification_property.png)
+
+## Deploying the flow
+
+After you finish editing your Node-RED flow, press the **Deploy** button located on the top right of your screen.
+
+![Deploy](/assets/images/subscribe_to_zigbee2mqtt_with_node_red/Deploy.png)
+
+Now you can go to your Node-RED dashboard at (Path to your Node-RED frontend)/ui/ .
+
+![Dashboard UI 1](/assets/images/displaying_data_from_zigbee_end_devices_on_node_red_dashboard/Dashboard_UI1.png)
+
+![Dashboard UI 2](/assets/images/displaying_data_from_zigbee_end_devices_on_node_red_dashboard/Dashboard_UI2.png)
