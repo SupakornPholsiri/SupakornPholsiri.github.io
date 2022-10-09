@@ -85,8 +85,12 @@ The **function2** node extracts the illuminance_lux's value from the JSON reciev
 
 ### Setting up gauge node's properties
 
-![](/assets/images/displaying_data_from_zigbee_end_devices_on_node_red_dashboard/gauge_property.png)
+![Gauge node's properties](/assets/images/displaying_data_from_zigbee_end_devices_on_node_red_dashboard/gauge_property.png)
+
+![Dashboard group node](/assets/images/displaying_data_from_zigbee_end_devices_on_node_red_dashboard/dashboard_group.png)
+
+![Dashboard tab node](/assets/images/displaying_data_from_zigbee_end_devices_on_node_red_dashboard/dashboard_tab.png)
 
 ### Setting up notification node's properties
 
-![](/assets/images/displaying_data_from_zigbee_end_devices_on_node_red_dashboard/notification_property.png)
+![Notification node's properties](/assets/images/displaying_data_from_zigbee_end_devices_on_node_red_dashboard/notification_property.png)
