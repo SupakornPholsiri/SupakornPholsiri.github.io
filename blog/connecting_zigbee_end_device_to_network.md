@@ -41,7 +41,7 @@ frontend:
   port: 8080  
 ```
 
-Set **permit_true** to true when you want to connect new zigbee end devices to the zigbee network. Set it to false otherwise.
+Set **permit_join** to true when you want to connect new zigbee end devices to the zigbee network. Set it to false otherwise.
 
 ## Connecting devices to the network
 
